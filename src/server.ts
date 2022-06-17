@@ -86,7 +86,7 @@ import { filterImageFromURL, deleteLocalFiles } from "./util/util";
           const token = jwt.sign(
             {user_id: user._id, email},
             process.env.TOKEN_KEY,{
-              expiresIn: 360
+              expiresIn: 604800
             }
           )
           user.token = token
@@ -107,7 +107,7 @@ import { filterImageFromURL, deleteLocalFiles } from "./util/util";
     if(user && (await bcrypt.compare(password, user.password))){
       const token = jwt.sign({
         user_id: user._id, email
-      }, process.env.TOKEN_KEY,{expiresIn: 360})
+      }, process.env.TOKEN_KEY,{expiresIn: 604800})
 
       user.token = token
       res.status(200).json(user)
