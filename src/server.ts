@@ -1,5 +1,5 @@
 require("dotenv").config();
-const db_manager = require("../config/database");
+const db_manager = require("./config/database");
 
 const bcrypt = require('bcrypt');
 const jwt = require("jsonwebtoken");
@@ -7,8 +7,8 @@ const jwt = require("jsonwebtoken");
 import express, { Request, Response } from "express";
 import bodyParser from "body-parser";
 
-const User = require("../model/user")
-const auth = require('../middleware/auth')
+const User = require("./model/user")
+const auth = require('./middleware/auth')
 import { filterImageFromURL, deleteLocalFiles } from "./util/util";
 
 (async () => {
