@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "69c726ce-72a1-4b8b-b7d7-d8fbc8f364c6",
+		"name": "C:\\Users\\ephra\\Downloads\\postman-collection-file",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetTokenRequest",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\":\"root@root.io\",\n\t\"password\":\"root\"\n}"
+						},
+						"url": {
+							"raw": "{{eb-remote}}/login",
+							"host": [
+								"{{eb-remote}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Authentication",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjJhY2I0MTkwNmNiMzVmNzk1MTRiZjEwIiwiZW1haWwiOiJyb290QHJvb3QuaW8iLCJpYXQiOjE2NTU1MTQ5OTUsImV4cCI6MTY1NjExOTc5NX0.ktbdyuoXfVNl_Jt0yx_NPKcAz0nDCg0bZhe5I2zJ6uQ\"\r\n}"
+						},
+						"url": {
+							"raw": "{{eb-remote}}/filteredimage?image_url=http://cdn.pixabay.com/photo/2013/02/09/01/22/beyonce-79551_960_720.jpg",
+							"host": [
+								"{{eb-remote}}"
+							],
+							"path": [
+								"filteredimage"
+							],
+							"query": [
+								{
+									"key": "image_url",
+									"value": "http://cdn.pixabay.com/photo/2013/02/09/01/22/beyonce-79551_960_720.jpg"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
