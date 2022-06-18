@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "8fb7bc34-e48f-473f-b08a-16a701e93d17",
+		"_postman_id": "90465714-0b85-432d-a366-5de02bc577d4",
 		"name": "Get-filtered-image with Authentication",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -44,11 +44,14 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "noauth"
+				},
 				"method": "GET",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjJhY2I0MTkwNmNiMzVmNzk1MTRiZjEwIiwiZW1haWwiOiJyb290QHJvb3QuaW8iLCJpYXQiOjE2NTU1MTYzNzAsImV4cCI6MTY1NjEyMTE3MH0.0Elj5j5mJDFMVakVZJnlb-wgD0JQOck4AjFJUGO7fq0\"\r\n}",
+					"raw": "{\r\n   \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjJhY2I0MTkwNmNiMzVmNzk1MTRiZjEwIiwiZW1haWwiOiJyb290QHJvb3QuaW8iLCJpYXQiOjE2NTU1MTg0MjAsImV4cCI6MTY1NjEyMzIyMH0.9WB5239nCvKQNTFisc7vswPimSqmzEoxlGKkJlPzie4\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
