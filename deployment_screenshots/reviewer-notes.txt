@@ -11,3 +11,8 @@
 
 # my postman-endpoints:(see)
     https://github.dev/efuraimuJS/Udagram-Image-Filtering-Microservice-Project-02/blob/main/deployment_screenshots/project-02-udacity.postman_collection.json
+
+
+# my auth-token-body:
+
+    {"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjJhY2I0MTkwNmNiMzVmNzk1MTRiZjEwIiwiZW1haWwiOiJyb290QHJvb3QuaW8iLCJpYXQiOjE2NTU1MTg0MjAsImV4cCI6MTY1NjEyMzIyMH0.9WB5239nCvKQNTFisc7vswPimSqmzEoxlGKkJlPzie4"}
